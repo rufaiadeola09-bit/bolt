@@ -1,0 +1,28 @@
+body{
+    background-image: url(./7808144292b9debe6e692fe43806e17c.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+li{
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: large;
+}
+li button{
+    background-color: rgb(43, 250, 205);
+    border-radius: 35px;
+    padding: 15px;
+    width: 200px;
+    position: relative;
+    bottom: 20px;
+    left: 180px;
+}

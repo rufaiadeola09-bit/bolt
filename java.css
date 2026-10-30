@@ -1,0 +1,38 @@
+.card{
+    background-color: #c211e6;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+body{
+    background-color: blue;
+}
+h1{
+    font-weight: 600;
+    font-size: 40px
+}
+input{
+    display: block;
+    width: 380px;
+    height: 50px;
+    border-radius: 5px;
+    position: relative;
+    right: 10px;
+}
+button{
+    width: 230px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: cornflowerblue;
+    position: relative;
+    left: 70px;
+    top: 30px;
+}
+h2{
+    position: relative;
+    left: 120px;
+    top: 30px;
+}

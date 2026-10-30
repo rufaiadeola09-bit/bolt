@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <div class="flex flex-col items-center">
+        <h1 class="text-5xl font-extrabold text-gray-800 mb-8">
+            Scientific Calculator
+        </h1>
+        <div class="w-[630px] h-[500px] bg-pink-100 rounded-3xl shadow-2xl p-6">
+            <input id="display"class="display w-full h-24 bg-gray-900 rounded-2xl text-right text-white text-5xl px-6 mb-5"value="0">
+            <div class="buttons grid grid-cols-7 gap-4 mt-5">
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">Inv</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">Deg</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">x!</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">(</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">)</button>
+                <button onclick="clearDisplay()"class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">C</button>
+                <button onclick="deleteNumber()"class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">ln</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">sin</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">%</button>
+                <button onclick="addValue('7')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">7</button>
+                <button onclick="addValue('8')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">8</button>
+                <button onclick="addValue('9')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">9</button>
+                <button onclick="addValue('/')"class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">÷</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">log</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">cos</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">√</button>
+                <button onclick="addValue('4')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">4</button>
+                <button onclick="addValue('5')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">5</button>
+                <button onclick="addValue('6')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">6</button>
+                <button onclick="addValue('*')"class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">*</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">^</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">tan</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">1/x</button>
+                <button onclick="addValue('1')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">1</button>
+                <button onclick="addValue('2')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">2</button>
+                <button onclick="addValue('3')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">3</button>
+                <button onclick="addValue('-')"class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">-</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">Exp</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">π</button>
+                <button class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">e</button>
+                <button onclick="addValue('0')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">0</button>
+                <button onclick="addValue('.')"class="h-12 rounded-lg bg-white text-indigo-700 font-semibold hover:bg-blue-600">.</button>
+                <button onclick="calculate()"class="h-12 rounded-lg bg-indigo-600 text-white font-bold hover:bg-blue-800">=</button>
+                <button onclick="addValue('+')"class="h-12 rounded-lg bg-indigo-100 text-indigo-700 font-semibold hover:bg-blue-600">+</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function addValue(value){
+            document.getElementById("display").value += value;
+        }
+        function clearDisplay(){
+            document.getElementById("display").value = "";
+        }
+        function deleteNumber(){
+            let display = document.getElementById("display");
+            display.value = "";
+        }
+        function calculate(){
+            let display = document.getElementById("display");
+            display.value = eval(display. value);
+        }
+    </script>
+</body>
+</html>
