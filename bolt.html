@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="overflow-x-hidden">
+    <section class="relative h-screen overflow-hidden">
+    <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="absolute top-0 left-0 w-full h-full object-cover">
+        <source src="./video.mp4"type="video/mp4">
+    </video>
+    <div class="relative z-10 flex justify-between items-center p-10 text-white">
+    <h1 class="text-4xl font-bold">Bolt</h1>
+    <div class="flex items-center gap-8">
+        <ul class="flex items-center gap-8">
+            <li class="flex items-center gap-2">
+                <img src="./flag.webp" class="w-6 h-6 rounded-full" alt="">
+                <span>EN</span>
+            </li>
+            <li>Support</li>
+        </ul>
+        <button class="bg-white text-black px-5 py-2 rounded-full hover:bg-red-500">
+            Register
+        </button>
+
+        <button class="text-3xl">
+            ☰
+        </button>
+    </div>
+    </div>
+    <div class="relative z-10 text-white p-10">
+        <h1 class="text-[73px] font-bold ">Bolt is coming<br>for Formular1</h1>
+        <h2 class="text-2xl">Bolt is partnering with Paul Aron, test and reserve<br>drivers for the BWT Alpine Formular One Team.</h2>
+    </div>
+    <button class="bg-green-500 text-black font-bold px-6 py-3 rounded-lg relative z-10 ml-10">
+        Get Bolt
+    </button>
+</section>
+<div class="text-center"> 
+    <h2 class="mt-20 font-bold text-[52px]">Over services</h2>
+    <h3 class="text-gray-500 text-2xl">Products and features vary by country. Some features listed here may not<br> be available on the app.</h3>
+</div>
+<div class="w-full overflow-x-auto hide-scrollbar mt-20">
+    <style>
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+</style>
+    <div class="flex gap-6 w-max px-6">
+    <div class="card relative w-[370px] h-[650px] left-[13px] rounded-xl overflow-hidden shadow-3xl
+            transition-all duration-300 ease-in-out
+            hover:-translate-y-3">
+        <img
+            src="./car.webp"
+            class="w-full h-full object-cover">
+        <div class="absolute top-10 left-8 text-white">
+            <h2 class="text-4xl font-bold">Rides</h2>
+            <p class="mt-5 text-2xl">
+                Request in seconds,ride in<br> minutes.
+            </p>
+            <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-blue-500 text-2xl">
+                Get started
+            </button>
+        </div>
+    </div>
+     <div class="card relative w-[370px] h-[650px] rounded-xl overflow-hidden shadow-3xl transition-all duration-300 ease-in-out
+            hover:-translate-y-3">
+        <img
+            src="./girl.jpg"
+            class="w-full h-full object-cover">
+        <div class="absolute top-10 left-8 text-white">
+            <h2 class="text-4xl font-bold">Delivery</h2>
+            <p class="mt-5 text-2xl">
+                Your favorite food,<br> fast.
+            </p>
+            <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-blue-500 text-2xl">
+                Go to Bolt Food
+            </button>
+        </div>
+    </div>
+      <div class="card relative w-[370px] h-[650px] rounded-xl overflow-hidden shadow-3xl transition-all duration-300 ease-in-out
+            hover:-translate-y-3">
+        <img
+            src="./drive.webp"
+            class="w-full h-full object-cover object-left">
+        <div class="absolute top-10 left-8 text-white">
+            <h2 class="text-4xl font-bold">Car-sharing</h2>
+            <p class="mt-5 text-2xl">
+                Big quality car rental made<br> easy.
+            </p>
+            <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-blue-500 text-2xl">
+                Go to Bolt Drive
+            </button>
+        </div>
+    </div>
+    <div class="card relative w-[370px] h-[650px] rounded-xl overflow-hidden shadow-3xl transition-all duration-300 ease-in-out
+            hover:-translate-y-3">
+        <img
+            src="./out.avif"
+            class="w-full h-full object-cover ">
+            
+        <div class="absolute top-10 left-8 text-white">
+            <h2 class="text-4xl font-bold">Groceries</h2>
+            <p class="mt-5 text-2xl">
+                All the essentials whenever you<br> need them.
+            </p>
+            <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-blue-500 text-2xl">
+                Go to Bolt Market
+            </button>
+        </div>
+    </div>
+     <div class="card relative w-[370px] h-[650px] rounded-xl overflow-hidden shadow-3xl transition-all duration-300 ease-in-out
+            hover:-translate-y-3">
+        <img
+            src="./top.webp"
+            class="w-full h-full object-cover ">
+        <div class="absolute top-10 left-8 text-white">
+            <h2 class="text-4xl font-bold">Business</h2>
+            <p class="mt-5 text-2xl">
+                Manage business travel for<br> your team and client.
+            </p>
+            <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-blue-500 text-2xl">
+                Go to Bolt for Business
+            </button>
+        </div>
+    </div>
+     <div class="card relative w-[370px] h-[650px] rounded-xl overflow-hidden shadow-3xl transition-all duration-300 ease-in-out
+            hover:-translate-y-3c">
+        <img
+            src="./bike.webp"
+            class="w-full h-full object-cover ">
+        <div class="absolute top-10 left-8 text-white">
+            <h2 class="text-4xl font-bold">Micromobility</h2>
+            <p class="mt-5 text-2xl">
+                2-wheel ride rental at your<br> fingertips.
+            </p>
+            <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-blue-500 text-2xl">
+                Learn more.
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="relative mt-20 w-full h-screen">
+    <img src="./ChatGPT Image Jun 26, 2026, 08_17_53 PM.png"
+        class="w-full h-full object-cover"alt="">
+    <div class="absolute top-20 left-0 w-full text-center text-white">
+        <h1 class="text-6xl font-bold mb-8">
+            Meet Bolt 7
+        </h1>
+        <h2 class="text-2xl leading-relaxed font-light">
+            Bolt 7 is the next-generation scooter, built together with city authorities and
+            <br>
+            shaped by what riders struggle with day to day. It combines a fully
+            <br>
+            integrated display with navigation, real-time parking guidance, stronger
+            <br>
+            safety features, and built-in AI systems to help reduce pavement riding and
+            <br>
+            make shared scooters safer for everyone.
+        </h2>
+        <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-blue-500 text-2xl">Start riding</button>
+    </div>
+</div>
+<div class="relative w-full h-screen">
+    <img src="./ChatGPT Image Jun 26, 2026, 10_52_53 PM.png" class="w-full h-full object-cover" alt="">
+    <div class="absolute top-20 left-0 w-full text-center text-white">
+        <h3 class="text-3xl font-bold">About us</h3>
+        <h1 class="text-[70px] font-bold">Bolt is the first European<br> mobility super-app.</h1>
+        <h2 class="text-2xl font-bold">We're making cities for people, offering better alternatives for every<br> purpose a private car serves — including ride-hailing, shared cars,<br> scooters, and food and grocery delivery.</h2>
+        <button class="mt-8 bg-blue-500 px-7 py-4 rounded-xl font-bold hover:bg-green-500 text-2xl">Our mission</button>
+    </div>
+</div>
+<div class="mt-20 p-20">
+    <h1 class="text-[60px] font-bold">Earn money with Bolt</h1>
+    <h2 class="text-2xl">Join over 4.5 million partners worldwide that earn with Bolt. For drivers, couriers, merchants, and fleet<br>owners looking for new ways to boost revenue.</h2>
+    <img src="./lio.avif" class="w-[530px] h-[600px] rounded-xl mt-20" alt="">
+    <div class="relative left-[650px] bottom-[400px]">
+        <h2 class="font-bold text-xl text-gray-500">Earn money as a Bolt driver</h2>
+        <h1 class="font-bold text-4xl">Drive and earn money</h1>
+        <h2 class="mt-3 text-xl text-gray-500 font-bold">Our 200+ million riders will send you plenty of ride requests.<br> When demand is high, you can earn even more.</h2>
+        <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-pink-500 text-2xl text-white">Regsiter to drive</button>
+    </div>
+</div>
+<div class="relative bottom-[230px]">
+    <img src="./memm.webp" class="w-[550px] h-[550px] rounded-xl relative left-[720px]" alt="">
+   <div class="relative left-20 bottom-[400px]">
+    <h2 class="font-bold text-xl text-gray-500">Become a Bolt courier partner</h2>
+    <h1 class="font-bold text-4xl">Earn with every delivery</h1>
+    <h2 class="mt-3 text-xl text-gray-500 font-bold">You decide when and how often you deliver — weekdays,<br> evenings, weekends, or just the occasional hour — it's up to you.</h2>
+    <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-pink-500 text-2xl text-white">Regsiter as a courier</button>
+   </div>
+</div>
+<div class="relative bottom-[450px] p-20">
+    <img src="./busi.webp" class="w-[530px] h-[600px] rounded-xl object-cover" alt="">
+    <div class="relative left-[600px] bottom-[500px] ">
+        <h2 class="font-bold text-xl text-gray-500">Increase earnings as merchant</h2>
+        <h1 class="font-bold text-4xl">Increase your sales and reach new<br> customers</h1>
+        <h2 class="mt-3 text-xl text-gray-500 font-bold">Millions of our users are ordering food or goods from<br> restaurants and stores just like yours.</h2>
+        <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-pink-500 text-2xl text-white">Regsiter with Bolt Food</button>
+    </div>
+</div>
+<div class="relative bottom-[630px]">
+    <img src="./ChatGPT Image Jun 27, 2026, 11_31_10 AM (3).png" class="w-[850px] h-[550px] rounded-xl relative left-[600px]" alt="">
+   <div class="relative left-10 bottom-[400px]">
+    <h2 class="font-bold text-xl text-gray-500">Join Bolt with your fleet and earn more</h2>
+    <h1 class="font-bold text-4xl">Grow your transport business</h1>
+    <h2 class="mt-3 text-xl text-gray-500 font-bold">As a fleet owner and Bolt partner, you can manage your<br> assets from one easy-to-use dashboard and grow your<br> transport business.</h2>
+    <button class="mt-8 bg-green-500 px-7 py-4 rounded-xl font-bold hover:bg-pink-500 text-2xl text-white">Regsiter your fleet</button>
+   </div>
+   <div class="text-center relative bottom-[100px]">
+    <h2 class="text-3xl text-gray-500">Latest features</h2>
+    <h1 class="font-bold text-[80px]">Bolt Send</h1>
+    <h2 class="mt-1 text-2xl text-gray-500">On-demand parcel delivery. Send or receive items the same day.</h2>
+    <h2 class="mt-3 text-2xl text-gray-500">Check in app for available features.</h2>
+     <button class="mt-8 bg-green-500 px-5 py-4 rounded-xl font-bold hover:bg-pink-500 text-2xl text-white">Send items</button>
+   </div>
+</div>
+<img src="./gift.png" class="relative bottom-[650px] w-full h-full" alt="">
+<section class="relative bottom-[650px]">
+    <img src="./ChatGPT Image Jun 27, 2026, 12_51_17 PM.png"  class="w-full h-full object-cover" alt="">
+    <div class="absolute top-20 left-0 w-full text-center text-white  z-10">
+    <div class="text-center">
+        <h1 class="text-white text-7xl font-bold">Download our apps</h1>
+        <p class="text-gray-400 text-2xl mt-6">Available for iOS and Android devices.</p>
+    </div>
+    <div class="absolute right-20 top-[200px] w-[430px] text-left">
+        <div class="w-[420px] ml-30">
+            <div class="flex gap-10 mb-10 text-lg">
+                <button class="text-white border-b-2 border-pink-500 pb-2 font-bold">Rides</button>
+                <button class="text-white hover:text-gray-500 pb-2 transition">Delivery</button>
+            </div>
+            <h2 class="text-white text-4xl font-bold leading-tight">The food you love,delivered fast!</h2>
+            <p class="text-gray-400 text-2xl mt-6">Available for iOS and Android devices.</p>
+            <button class="mt-10 bg-[#2F9E62] hover:bg-[#248451] transition text-white font-semibold text-xl px-8 py-4 rounded-xl">Get Bolt Food</button>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="py-24 px-20 relative bottom-[600px]">
+    <h1 class="text-7xl font-bold text-gray-900">News and updates</h1>
+    <button class="mt-10 px-8 py-4 bg-gray-100 rounded-xl text-3xl font-semibold hover:bg-pink-200 transition">View all ↗</button>
+    <div class="grid grid-cols-3 gap-6 mt-20">
+        <div class="col-span-2 border rounded-2xl overflow-hidden flex">
+            <img src="./seat.jpg"class="w-1/2 object-cover"alt="">
+            <div class="p-8 flex flex-col justify-between">
+                <div class="flex justify-between items-center">
+                    <p class="font-semibold text-gray-700">Rides</p>
+                    <p class="text-gray-500">26 May 2026</p>
+                </div>
+                <h2 class="text-2xl font-bold mb-[26,0px] leading-tight">Your Bolt Ride Is Giving Back This Children's Day — Here's...</h2>
+            </div>
+        </div>
+        <div class="border rounded-2xl p-6 flex flex-col gap-8">
+            <div class="flex gap-4 items-center">
+                <img src="./loc.webp"class="w-28 h-28 rounded-xl object-cover"alt="">
+                <div>
+                    <h3 class="font-bold text-xl leading-snug">To give you that extra layer of precision and peace of...</h3>
+                    <p class="text-gray-500 mt-2">25 Mar 2026</p>
+                </div>
+            </div>
+            <div class="flex gap-4 items-center">
+                <img src="./hgre.jpg"class="w-28 h-28 rounded-xl object-cover"alt="">
+                <div>
+                    <h3 class="font-bold text-xl leading-snug">Your Bolt Rewind has arrived</h3>
+                    <p class="text-gray-500 mt-2">16 Dec 2025</p>
+                </div>
+            </div>
+            <div class="flex gap-4 items-center">
+                <img src="./mad.jpg"class="w-28 h-28 rounded-xl object-cover" alt="">
+                <div>
+                    <h3 class="font-bold text-xl leading-snug">Bolt says thanks: win 3 months of free rides</h3>
+                    <p class="text-gray-500 mt-2">6 Oct 2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="bg-[#000] text-white px-24 py-20  relative bottom-[600px]">
+    <div class="grid grid-cols-7 gap-12">
+        <div>
+            <h2 class="font-bold mb-6">Products</h2>
+            <ul class="space-y-4 text-gray-300">
+                <li>Rides</li>
+                <li>Scooters</li>
+                <li>E-Bikes</li>
+                <li>Bolt Drive</li>
+                <li>Bolt Food</li>
+                <li>Bolt Market</li>
+                <li>Bolt for Business</li>
+                <li>Bolt Plus</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="font-bold mb-6">Earn</h2>
+            <ul class="space-y-4 text-gray-300">
+                <li>Bolt Drivers</li>
+                <li>Driver earnings</li>
+                <li>Bolt Couriers</li>
+                <li>Courier earnings</li>
+                <li>Bolt Food Merchants</li>
+                <li>Bolt Fleets</li>
+                <li>Bolt Franchise</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="font-bold mb-6">Company</h2>
+            <ul class="space-y-4 text-gray-300">
+                <li>About Bolt</li>
+                <li>Bolt's Mission</li>
+                <li>Leadership</li>
+                <li>Careers</li>
+                <li>Sustainability</li>
+                <li>Project Zero</li>
+                <li>Accessibility</li>
+                <li>Urban Fund</li>
+                <li>Investor relations</li>
+                <li>Blog</li>
+                <li>Newsroom</li>
+                <li>Brand</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="font-bold mb-6">Support</h2>
+
+            <ul class="space-y-4 text-gray-300">
+                <li>Riders</li>
+                <li>Drivers</li>
+                <li>Bolt Food</li>
+                <li>Couriers</li>
+                <li>Fleets</li>
+                <li>Restaurants</li>
+                <li>Bolt for Business</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="font-bold mb-6">Safety</h2>
+            <ul class="space-y-4 text-gray-300">
+                <li>Rider safety</li>
+                <li>Driver safety</li>
+                <li>Scooter safety</li>
+                <li>Safety Lab</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="font-bold mb-6">Locations</h2>
+            <ul class="space-y-4 text-gray-300">
+                <li>Our cities</li>
+                <li>Our airports</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="font-bold mb-6">City solutions</h2>
+            <ul class="space-y-4 text-gray-300">
+                <li>Our mission</li>
+                <li>Charging docks</li>
+            </ul>
+        </div>
+    </div>
+    <hr class="border-gray-700 my-16">
+    <div class="flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="./flag.webp" class="w-7 h-5" alt="">
+            <span class="font-semibold">EN</span>
+        </div>
+        <div class="flex gap-8 text-gray-300 text-sm">
+            <a href="#">Suppliers</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Privacy</a>
+            <a href="#">Insurance</a>
+            <a href="#">Cookies</a>
+            <a href="#">Security</a>
+            <a href="#">Community Guidelines</a>
+        </div>
+        <div class="flex gap-4">
+            <button class="border border-green-500 px-6 py-3 rounded-xl font-semibold hover:bg-green-500 hover:text-black transition">Get Bolt</button>
+            <button class="border border-green-500 px-6 py-3 rounded-xl font-semibold hover:bg-green-500 hover:text-black transition">Get Bolt Food</button>
+        </div>
+    </div>
+     <div class="flex items-center gap-8">
+            <img src="./bolt-white.png"class="w-16"alt="">
+            <a href="#"><i class="fa-brands fa-facebook-f text-white text-lg hover:text-green-500 duration-300"></i></a>
+            <a href="#">
+            <i class="fa-brands fa-x-twitter text-white text-lg hover:text-green-500 duration-300"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-white text-lg hover:text-green-500 duration-300"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in text-white text-lg hover:text-green-500 duration-300"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok text-white text-lg hover:text-green-500 duration-300"></i></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
